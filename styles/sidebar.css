@@ -1,0 +1,81 @@
+@media (max-width:1200px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 5px;
+  }
+
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* when flex-direction: column,
+    justify-content aligns vertically and align-items affects the horizontal direction. Opposite to when flex-direction: row.*/
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+  }
+  
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+}
+
+@media (min-width:1200.1px) {
+  .sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 220px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 13px;
+  }
+
+  .sidebar-link {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    /* when flex-direction: column,
+    justify-content aligns vertically and align-items affects the horizontal direction. Opposite to when flex-direction: row.*/
+  }
+
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-right: 19px;
+  }
+
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  body {
+    padding-left: 248px;
+  }
+}
